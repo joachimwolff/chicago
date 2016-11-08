@@ -1,0 +1,20 @@
+export(chicagoPipeline, copyCD, defaultSettings, estimateBrownianComponent, estimateBrownianNoise, estimateDistFun, plotDistFun,
+       estimateTechnicalNoise, exportResults, exportToGI, getPvals, getScores, mergeSamples, modifySettings,
+       normaliseBaits, normaliseOtherEnds, plotBaits, readAndMerge, readSample, setExperiment,
+       overlapFragWithFeatures, peakEnrichment4Features, chicagoData, getSkOnly)
+exportMethods(intData, settings, params, "intData<-", "params<-")
+
+
+import(data.table)
+import(methods)
+import(matrixStats)
+
+importFrom(grDevices, dev.off, pdf)
+importFrom(graphics, abline, arrows, barplot, boxplot,
+           legend, lines, par, plot)
+importFrom(stats, density, dist, end, lm, loess, median,
+           pgamma, pnbinom, ppois, predict, quantile, sd)
+importFrom(utils, read.table, write.table)
+importFrom(Delaporte, pdelap)
+importFrom(Hmisc, cut2)
+importFrom(MASS, glm.nb, fitdistr)
